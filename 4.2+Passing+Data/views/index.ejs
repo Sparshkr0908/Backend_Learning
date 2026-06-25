@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letter</title>
+</head>
+<body>
+  <% if(locals.infodata){ %>
+    <h1>
+      There are <%= infodata %> letters in your Name
+    </h1>
+    <% }else{%>
+  <h1>
+    Enter your name below 👇
+  </h1>
+  <% } %>
+  <form action="/submit" method="post">
+    <input type="text" name="Firstname" placeholder="Enter First Name"/>
+    <input type="text" name="lastname" placeholder="Enter Last Name"/>
+    <input type="submit" value="OK"/>
+  </form>
+</body>
+</html>
